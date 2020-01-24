@@ -1,0 +1,15 @@
+#Access-Control-Allow-Origin "*"
+
+php_value post_max_size 30M
+php_value upload_max_filesize 30M
+php_value memory_limit -1
+php_value max_execution_time 0
+php_value max_input_time 0
+
+<IfModule mod_rewrite.c>
+Header set Access-Control-Allow-Origin "*"
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?/$1 [L]

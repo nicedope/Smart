@@ -1,0 +1,382 @@
+	body{
+			font-family: "Message-SemiBoldRounded" , sans-serif;
+		}
+	.od_section{
+		position: relative;
+	}
+	#video_holder {
+		position: fixed;
+		right: 0;
+		bottom: 0;
+		min-width: 100%; 
+		min-height: 100%;
+	}
+	.overlay {
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background: rgba(10,10,10,0.5) url(../image/overlay.png);
+		opacity: 0.75;
+		filter: alpha(opacity=40);
+		z-index: 1;
+	}
+	.od_logo{
+	    position: absolute;
+	    left: 0px;
+	    right: 0px;
+	    top: 0px;
+	    bottom:0px;
+	    max-width: 600px;
+	    width: 95%;
+	    margin:0 auto;    
+	    z-index: 2;
+	    text-align: center;
+	    .od_image{
+	    	width: auto;
+	    }
+	}
+
+	.od_dashboard{
+	    position: absolute;
+	    left: 0px;
+	    right: 0px;
+	    top: 0px;
+	    bottom:0px;
+	    max-width: 1600px;
+	    width: 100%;
+	    margin:0 auto;    
+	    z-index: 2;
+	    text-align: center;
+	    .od_image{
+	    	width: 300px;
+	    }
+	    .od_logout_holder{
+	    	position: relative;
+	    	.od_logout_main{
+		    	background: rgba(0, 0, 0, 0.50);
+		    	float:right;
+		    	a{
+		    		color:#ffffff;
+		    		padding: 15px;
+		    		font-size:20px;
+		    		display: block;
+		    		&:hover{
+						background: rgba(15, 15, 15, 0.20);
+		    		}
+		    	}
+	    	}
+	    	
+	    }
+	}
+
+	.od_email{
+		padding: 10px 0 10px 15px;
+		font-size: 17px;
+		font-weight: 300;
+		color: #ddd;
+		letter-spacing: 1px;
+		border: none;
+		background: transparent;
+		box-sizing: border-box;
+		font-family: "Message-SemiBoldRounded" , sans-serif;
+		width: 100%;
+		outline: none;
+	}
+	.od_login_form{
+		background: rgba(0, 0, 0, 0.50);
+		padding: 35px 15px 35px 15px;
+		width: 100%;
+		.od_header {
+			padding: 0px 15px;
+			p{
+				text-align: left;
+				color: #ffffff;
+				font-size: 25px;
+				letter-spacing: 3px;
+				margin-bottom: 5px;
+				span{
+					font-size: 15px;
+				}
+			}
+			.od_user_details{
+				text-align: left;
+				color: #ffffff;
+				font-size: 15px;
+				letter-spacing: 3px;
+				margin-bottom: 15px;
+				float:left;
+			}
+			.od_button_holder{
+			    float: right;
+			    width: 500px;
+			    margin-top: -35px;
+			    margin-bottom: 30px;
+			    button:first-child{
+					border-bottom:5px solid #46c37b;
+			    }
+				button{
+					background: rgba(0, 0, 0, 0.5);
+					color: #ffffff;
+					border: 1px solid transparent;
+					border-radius: 15px;
+					outline: none;
+					width: 45%;
+					display: inline-block;
+					font-size: 25px;
+					margin-bottom: 20px;
+					padding: 10px 0px;
+					border-bottom: 5px solid #FF0B0B;
+					margin-left: 4%;
+					&:hover{
+						background: rgba(15, 15, 15, 0.20);
+					}
+					&:disabled{
+						background: rgba(15, 15, 15, 0.20) !important;
+						border-bottom: 5px solid rgba(15, 15, 15, 0.20);
+						color:#757474;
+					}
+				}
+			}
+		}
+		.od_table{
+			background: rgba(0, 0, 0, 0.55);
+			padding: 35px 15px 35px 15px;
+			width: 100%;
+			color:#ffffff;
+			text-align: center;
+			table th, table td{
+				color:#ffffff;
+			}
+		}
+	}
+	.od_login_input{
+		max-width: 400px;
+		width: 90%;
+		margin:0 auto;
+		text-align: center;
+		 h1{
+			color: #ffffff;
+			font-family: "Message-SemiBoldRounded" , sans-serif;
+			margin: 0;
+			margin-bottom: 30px;
+			font-size: 30px;
+		}
+	}
+	
+
+	.od_input_holder{
+		background: rgba(255, 255, 255, 0.15);
+		display: flex;
+		display: flex;
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		margin-bottom: 20px;
+		padding: 2px 10px 2px 0;
+		border-radius: 35px;
+		-webkit-border-radius: 35px;
+		-moz-border-radius: 35px;
+		-ms-border-radius: 35px;
+		-o-border-radius: 35px;
+		.od_input{
+			flex: 4 50%;
+			-webkit-box-flex: 4 50%;
+			-moz-box-flex: 4 50%;
+			-webkit-flex: 4 50%;
+			-ms-flex: 4 50%;
+			input{
+				padding: 6px 0 10px 15px;
+				font-size: 17px;
+				font-weight: 300;
+				color: #ddd;
+				letter-spacing: 1px;
+				border: none;
+				background: transparent;
+				box-sizing: border-box;
+				font-family: "Message-SemiBoldRounded" , sans-serif;
+				width: 100%;
+				outline: none;
+			}
+			select{
+				padding: 6px 0 10px 15px;
+				font-size: 17px;
+				font-weight: 300;
+				color: #ddd;
+				letter-spacing: 1px;
+				border: none;
+				background: transparent;
+				box-sizing: border-box;
+				font-family: "Message-SemiBoldRounded" , sans-serif;
+				width: 100% !important;
+				outline: none;    
+				option{
+					color:#000000;
+					padding: 5px 0px;
+				}
+			}
+		}
+		span{
+			flex: 1.5;
+			-webkit-box-flex: 1.5;
+			-moz-box-flex: 1.5;
+			width: 1.50%;
+			-webkit-flex: 1.5;
+			-ms-flex: 1.5;
+			color: #fff;
+			background: transparent;
+			line-height: 38px;
+			text-align: right;
+		}
+	}
+	.od_custom_search{
+		width: 250px;
+	    position: absolute;
+	    right: 50px;
+		height: 40px;
+		z-index: 9999;
+	}
+	.od_custom_select{
+		width: 250px;
+		height: 40px;
+		float:left;
+	}
+	.clear-both{
+		clear:both;
+	}
+	.od_input{
+		flex: 4 50%;
+		-webkit-box-flex: 4 50%;
+		-moz-box-flex: 4 50%;
+		-webkit-flex: 4 50%;
+		-ms-flex: 4 50%;
+		input{
+			padding: 15px 0 10px 15px;
+			font-size: 17px;
+			font-weight: 300;
+			color: #ddd;
+			letter-spacing: 1px;
+			border: none;
+			background: transparent;
+			box-sizing: border-box;
+			font-family: "Message-SemiBoldRounded" , sans-serif;
+			width: 100%;
+			outline: none;
+		}
+	}
+	
+	::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+		color: #aaaaaa;
+		opacity: 1; /* Firefox */
+	}
+
+	:-ms-input-placeholder { /* Internet Explorer 10-11 */
+		color: #aaaaaa;
+	}
+
+	::-ms-input-placeholder { /* Microsoft Edge */
+		color: #aaaaaa;
+	}
+	
+	.od_button{
+		width: 60%; 
+		margin:0 auto;
+		button{
+			background: transparent;
+			border: none;
+			color: #fff;
+			padding: 10px 0px 10px 14px;
+			text-transform: uppercase;
+			font-family: "Message-SemiBoldRounded" , sans-serif;
+			font-size: 16px;
+			width: 100%;
+			margin-top: 3px;
+			letter-spacing: 2px;
+			cursor: pointer;
+			transition: 0.5s all;
+			-webkit-transition: 0.5s all;
+			-moz-transition: 0.5s all;
+			-o-transition: 0.5s all;
+			-ms-transition: 0.5s all;
+			border-radius: 35px;
+			-webkit-border-radius: 35px;
+			-moz-border-radius: 35px;
+			-ms-border-radius: 35px;
+			-o-border-radius: 35px;
+			outline: none;
+		}
+		&:hover{
+			background: rgba(255, 255, 255, 0.5);
+		}
+	}
+
+	.od_button.active button{
+		cursor: auto;
+	}
+	.od_button.active{
+		background: rgba(255, 255, 255, 0.5) !important;
+	}
+
+	.od_error_message{
+		color:#FF0B0B;
+	    font-size: 20px;
+	    margin-top: 20px;
+	}
+
+
+	div.dataTables_wrapper div.dataTables_length label{
+		float: left;
+	}
+	.dataTables_filter{
+		display: none;
+	}
+
+.page-item.active .page-link {
+    z-index: 1;
+    color: #FF0B0B !important;
+    /* background-color: transparent; */
+    background: rgba(255, 255, 255, 0.15) !important;
+    border-color: #FF0B0B !important;
+    border-radius: 20px !important;
+}
+
+.page-link:hover {
+    z-index: 2;
+    color: #FF0B0B !important;
+    text-decoration: none;
+    background-color: transparent;
+    border-color: #FF0B0B !important;
+}
+.page-link:focus {
+    background: rgba(255, 255, 255, 0.15) !important;
+}
+.page-item.disabled .page-link {
+    color: #adb5bd;
+    border-color: transparent !important;
+    border-radius: 15px !important;
+    background: rgba(255, 255, 255, 0.15) !important;
+}
+div.dataTables_wrapper div.dataTables_paginate {
+    margin-top: 5px !important;
+}
+div.dataTables_wrapper div.dataTables_info {
+    padding-top: 0.85em;
+    white-space: nowrap;
+    text-align: left;
+}
+
+	@media screen and (min-width: 2000px) {
+		.od_logo {
+			margin-top: 5%;
+		}
+	}
+	@media screen and (max-width: 2000px) {
+		.od_logo .od_image{
+			width: 74%;
+			margin-top:50px;
+		}
+	}
